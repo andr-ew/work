@@ -1,0 +1,1047 @@
+@font-face {
+  font-family: "Space Mono";
+  src: url(font/SpaceMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url(font/SpaceMono-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+    font-family: "Messap";
+    src: url(font/Messapia-Bold.otf);
+}
+
+@font-face {
+    src: url(font/savate-regular.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+  width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    
+    margin: 0;
+}
+
+main {
+    width: 100%;
+}
+
+nav {
+    font-family: "Space Mono";
+    
+    z-index: 3;
+    
+    position: sticky;
+    
+    top: 0rem;
+    
+    height: 1px;
+    widows: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+nav ul:first-of-type {
+    margin-top: 4rem;
+}
+
+nav li {
+    margin-bottom: 0.1rem;
+    margin-right: 3rem;
+    
+    list-style: none;
+    
+    background-color: white;
+    
+    width: 7rem;
+}
+
+nav li a {
+    font-size: 0.65rem;
+    
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+nav li:hover {
+    text-decoration: underline;
+}
+
+.link {
+    display: grid;
+    
+    color: black;
+    text-decoration: none;
+}
+
+.link p {
+    white-space: nowrap;
+}
+
+a, a p {
+    font-family: "Space Mono";
+    font-style: italic;
+    font-style: italic;
+    font-style: italic;
+    font-weight: 100;
+}
+
+main > article div > p,  {
+    font-family: "SpaceMono-Regular";
+}
+
+article {
+    overflow: hidden;
+}
+
+article.landing, article.intro {
+     height: calc(100vh - 20px);
+}
+
+main > article {
+    background-size: cover;
+    background-position: center;
+}
+
+article.landing {
+    display: grid;
+    
+    background-color: white;
+    
+    z-index: 10;
+    
+    width: 100%;
+    
+    background-image: url('img/landingbg.png');
+}
+
+article.landing {
+    z-index: 10;
+}
+
+article.landing p {
+    color: black;
+}
+
+article.landing > .read-more {
+    display: grid;
+
+    color: white;
+    text-decoration: none;
+}
+
+article.landing > .read-more > p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    
+    text-align: right;
+    
+/*    transform-origin: center;*/
+    transform: rotate(-90deg);
+}
+
+article.landing > .read-more > svg {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+    transform: translate(-50%, 0)
+}
+
+/*
+article.landing > .issue img {
+    width: 100%;
+    
+    border: solid 4px white
+}
+*/
+
+article.landing > .issue {
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    
+    padding-top: 6rem;
+}
+
+article.landing > .issue * {
+    justify-content: center;
+    
+    align-self: center;
+}
+
+article.landing > .mad-science > img {
+    width: 100%;
+    
+    transform: translate(4%, 0);
+}
+
+article.landing .foil {
+    height: 225px;
+    
+    position: absolute;
+    
+    top: 60vh;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+article.intro {
+    display: grid;
+    
+    background-image: url('img/introbg.png');
+}
+
+article.intro .make h1 {
+    font-family: "Messap";
+}
+
+article.intro .literary-magazine h1 {
+    color: transparent;
+    
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+    font-family: "Messap";
+
+    margin: 0
+}
+
+article.intro > .content > p {
+    font-family: "Space Mono";
+}
+
+article.intro > .content .link {
+    grid-template-columns: min-content min-content;
+}
+
+article.intro > .spread {
+/*    display: flex;*/
+    width: 100%;
+    
+    position: relative;
+}
+
+article.intro > .spread img {
+/*    margin-left;*/
+    float: right;
+    
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+}
+
+/*/////////////////////////////////// */
+
+article.issue {
+    display: grid;
+    
+    background-image: url('img/issuebg.png');
+}
+
+article.issue > .box {
+    color: white;
+    
+    border: solid white 3px;
+    
+    display: grid;
+}
+
+article.issue > .box h1 {
+    font-family: "Savate";
+    
+    margin: auto;
+}
+
+article.issue > .box > p {
+    font-family: "Space Mono";
+}
+
+article.issue > .box .link {
+    color: white;
+}
+
+section.previews {
+    border-left: solid 1px gray;
+    
+    overflow: hidden;
+}
+
+section.previews > h1 {
+    color: white;
+    text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+    
+    font-family: "Messap";
+}
+
+section.previews pre {
+    font-family: "EB Garamond";
+}
+
+section.previews > article > h1 {
+    float: left;
+    
+    font-family: "Space Mono";
+    font-weight: 300;
+    font-style: italic;
+    
+    background-color: white;
+    
+    margin: 0;
+/*    margin-left: -1rem;*/
+}
+
+section.previews > article > h2 {
+    font-family: "Space Mono";
+    font-weight: 300;
+    font-style: italic;
+    
+    background-color: white;
+}
+
+/* wide --------------------------------------*/
+@media all and (min-width: 100vh) {  
+    
+    .divider {
+        width: 100%;
+    }
+    
+    main > article {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    a, a p {
+        font-size: 1.4rem;
+    }
+    
+    .link {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        
+        margin-top: 0.5rem;
+    }
+
+    .link p {
+        margin: 0;
+
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .link.down svg:nth-of-type(1) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        margin-top: 0.65rem;
+        margin-left: 0.5rem;
+        margin-right: 0.2rem;
+
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .link.right svg:nth-of-type(1) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        margin-top: 0.7rem;
+        margin-left: 0.5rem;
+        margin-right: 0.2rem;
+
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+
+    .link svg:nth-of-type(2) {
+        width: 100%;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .link svg:nth-of-type(2) line {
+        stroke-width: 0.15rem;
+    }
+
+    article.landing {
+        grid-template-columns: repeat(10, 10vw);
+        grid-template-rows: repeat(4, 25vh);
+        
+        z-index: 1;
+    }
+
+    article.landing > .circle {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+
+        width: 14vw;
+
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    article.landing > .read-more {
+        grid-column: 1 / 3;
+        grid-row: 3 / 5;
+        
+        width: 4rem;
+        
+/*        justify-content: center;*/
+    }
+
+    article.landing > .read-more {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+        
+        width: 4rem;
+        
+        margin-left: 9vw;
+    }
+    
+    article.landing > .read-more > p {
+/*        margin-top: 9rem;*/
+/*        width: 100%;*/
+        
+/*        width: 8rem;*/
+        white-space: nowrap;
+    }
+
+    article.landing > .read-more > svg {
+        height: 30%;
+        margin-left: 0.3rem;
+    }
+
+    article.landing > .issue {
+        grid-column: 3 / 6;
+        grid-row: 1 / 5;
+
+        width: 28vw;
+        height: 100%;
+
+        width: 100%;
+    }
+
+    article.landing > .issue > div {
+        margin-top: 50vh;
+        transform: translate(0, -50%)
+    }
+
+    article.landing > .issue img {
+        width: 100%;
+
+        border: solid 4px white
+    }
+
+    article.landing > .mad-science {
+        grid-column: 6 / 11;
+        grid-row: 1 / 4;
+    }
+    
+    article.intro {
+        grid-template-columns: repeat(4, 25vw);
+        grid-template-rows: repeat(4, 25vh);
+    }
+
+    article.intro > .make {
+        grid-column: 1/ 2;
+        grid-row: 1/ 5;
+    }
+
+    article.intro > .literary-magazine {
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+    }
+
+    article.intro .make h1 {
+        font-size: 6.5rem;
+
+        transform-origin: left;
+        transform: rotate(-90deg);
+        margin-top: 29rem;
+        
+        margin-left: 8rem;
+    }
+
+    article.intro .literary-magazine {
+        margin-top: 4rem;
+    }
+
+    article.intro .literary-magazine h1 {
+        font-family: "Messap";
+        font-size: 4.5rem;
+
+        margin: 0;
+    }
+
+    article.intro > .content {
+        grid-column: 2 / 4;
+        grid-row: 3 / 5;
+    }
+
+    article.intro > .content > p {
+        font-size: 1rem;
+    }
+
+    article.intro > .spread {
+        grid-column: 4 / 5;
+        grid-row: 3 / 4;
+    }
+
+    article.intro > .spread img {
+        width: 45%;
+
+    /*    margin-left;*/
+        float: right;
+
+        margin-right: 3rem;
+    /*    margin-bottom: 0.5rem;*/
+
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+
+    }
+    
+    .hamburger {
+        height: 0;
+    }
+    
+    article.issue {
+        display: grid;
+        grid-template-columns: 40% 40% 10%;
+        grid-template-rows: 1fr;
+        
+        justify-content: space-around;
+    }
+
+    article.issue > img.cover {
+/*        height: 100%;*/
+        
+        width: 100%;
+        
+        border-style: solid;
+        border-color: white;
+        border-width: 4px;
+    }
+    
+    article.issue > img.cover, article.issue > .box {
+/*        margin: 3.5rem 0;*/
+        
+        max-width: 30rem;
+        height: 39rem;
+        
+        justify-self: center;
+        align-self: center;
+    }
+
+    article.issue > .box {
+        
+
+        grid-template-columns: repeat(2, 50%);
+    /*    grid-template-rows: repeat(5, calc(20% - 1.4rem));*/
+         grid-template-rows: repeat(5, 20%);
+    }
+
+    article.issue > .box h1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+
+        font-size: 2.4rem;
+
+        letter-spacing: 0.25rem;
+    }
+
+    article.issue > .box > p {
+        
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+
+        margin: 1rem 2rem;
+    }
+
+    article.issue > .box .cost {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+
+    /*    padding-top: 2rem;*/
+
+        margin-left: 2rem;
+
+        margin-top: 3rem;
+    }
+
+    article.issue > .box .shop {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+
+        margin-left: 2rem;
+
+        grid-template-columns: min-content min-content;
+
+        height: 1em;
+    }
+
+    article.issue > .box .previews {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+
+        grid-template-columns: min-content min-content;
+
+        height: 1em;
+    }
+    section.previews {
+        
+        padding-top: 3rem;
+
+        padding-bottom: 4rem;
+
+    }
+
+    section.previews > h1 {
+        font-size: 13.1vw;
+
+        margin-top: 0;
+        margin-left: -0.7rem;
+        margin-bottom: 2rem;
+    }
+
+    section.previews > article {
+        margin-left: 4rem;
+        margin-right: 11rem;
+    }
+
+    section.previews > article > h1 {
+
+        margin: 0;
+    /*    margin-left: -1rem;*/
+
+        font-size: 4rem;
+
+        transform: translate(0, -0.5rem)
+    }
+
+    section.previews > article > h2 {
+        margin: 0;
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+
+        font-size: 3rem;
+    }
+
+    section.previews > article > p {
+        margin-left: 9rem;
+
+        line-height: 1.5;
+
+        margin-bottom: 6rem;
+    }
+}
+
+/*tall--------------------------------------*/
+@media all and (max-width: 100vh) { 
+    
+    
+    main > article {
+        width: 100%;
+        height: 80vh;
+    }
+    
+    a, a p {
+        font-size: 0.75rem;
+    }
+    
+     a, a p {
+/*        font-size: 1.4rem;*/
+    }
+    
+    .link {
+        grid-template-columns: min-content min-content
+;
+        grid-template-rows: min-content min-content;
+        
+        margin-top: 0.5rem;
+    }
+
+    .link p {
+        margin: 0;
+
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .link.down svg:nth-of-type(1) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        margin-bottom: 0.13rem;
+        margin-left: 0.5rem;
+        margin-right: 0.2rem;
+
+        width: 0.5rem;
+        height: 0.5rem;
+        
+        align-self: flex-end;
+    }
+
+    .link.right svg:nth-of-type(1) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+        margin-top: 0.37rem;
+        margin-left: 0.5rem;
+        margin-right: 0.2rem;
+
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+
+    .link svg:nth-of-type(2) {
+        width: 100%;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .link svg:nth-of-type(2) line {
+        stroke-width: 0.11rem;
+    }
+    
+    article.landing {
+        grid-template-columns: repeat(5, 20vw);
+        grid-template-rows: repeat(4, 25%);
+    }
+
+    article.landing > .circle {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+
+        width: 20vw;
+
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    article.landing > .read-more {
+        grid-column: 1 / 2;
+        grid-row: 2 / 4;
+        
+        align-self: center;
+    }
+
+    article.landing > .read-more > p {
+/*        margin-top: 23rem;*/
+/*        padding-top: 3vw;*/
+        
+        width: 6rem;
+    }
+
+    article.landing > .read-more > svg {
+        height: 5rem;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    article.landing > .issue {
+        grid-column: 2 / 5;
+        grid-row: 1 / 5;
+
+        width: 28vw;
+        height: 100%;
+
+        width: 100%;
+    }
+    
+    article.landing > .issue > div {
+        margin-top: 40vh;
+        transform: translate(0, -50%)
+    }
+
+    article.landing > .issue img {
+        width: 100%;
+        max-width: 18rem;
+        
+        margin: auto;
+
+        border: solid 4px white
+    }
+    
+    article.landing > .mad-science {
+       width: 0;
+    }
+    
+    .hamburger {
+        right: 1.2rem;
+        
+        width: 2rem;
+        
+        top: 1.2rem;
+    }
+    
+    .hamburger.one {
+        z-index: 12;
+        position: absolute;
+        
+        
+    }
+    
+    .hamburger.two {
+        position: fixed;
+        
+        z-index: 
+        
+        background-color: white;
+    }
+    
+    nav {
+        width: 0;
+    }
+    
+    article.intro {
+        grid-template-columns: repeat(3, 25%);
+        grid-template-rows: repeat(8, 12.5%);
+    }
+
+    article.intro > .make {
+        grid-column: 1/ 2;
+        grid-row: 1/ 5;
+        
+/*        padding-top: 0.5rem;*/
+    }
+
+    article.intro > .literary-magazine {
+        grid-column: 2 / 4;
+        grid-row: 1 / 3;
+        
+/*        padding-top: 0.5rem;*/
+    }
+
+    article.intro .make h1 {
+        font-size: 2.75rem;
+
+        transform-origin: left;
+        transform: rotate(-90deg);
+        margin-top: 14.4rem;
+        
+        margin-left: 3rem;
+    }
+
+    article.intro .literary-magazine {
+        margin-top: 4rem;
+        
+        z-index: -2
+    }
+
+    article.intro .literary-magazine h1 {
+        font-family: "Messap";
+        font-size: 1.75rem;
+
+        margin: 0;
+    }
+
+    article.intro > .content {
+        grid-column: 2 / 4;
+        grid-row: 4 / 7;
+        
+/*        margin-top: 1.5rem;*/
+    }
+
+    article.intro > .content > p {
+        font-size: 0.6rem;
+    }
+
+    article.intro > .spread {
+        grid-column: 2 / 4;
+        grid-row: 7 / 8;
+        
+/*        width: 0;*/
+    }
+
+    article.intro > .spread img {
+        width: 35%;
+
+    /*    margin-left;*/
+        float: left;
+
+        margin-right: 3rem;
+    /*    margin-bottom: 0.5rem;*/
+
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    
+    article.issue, article.issue * {
+        z-index: 12;
+    }
+    
+    article.issue {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    article.issue > .cover {
+        height: 0%;
+        width: 0%;
+    }
+
+    article.issue > img.cover {
+        height: 0%;
+        width: 0%;
+    }
+
+    article.issue > .box {
+        
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+        
+        max-width: 19rem;
+        margin: 3.5rem 2rem;
+        
+        min-height: 25rem;
+
+        grid-template-columns: repeat(2, 50%);
+    /*    grid-template-rows: repeat(5, calc(20% - 1.4rem));*/
+         grid-template-rows: repeat(5, 20%);
+    }
+
+    article.issue > .box h1 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+
+        font-size: 2rem;
+
+        letter-spacing: 0.25rem;
+    }
+
+    article.issue > .box > p {
+        
+        font-size: 0.75rem;
+        
+        grid-column: 1 / 3;
+        grid-row: 2 / 4;
+
+        margin: 1rem 2rem;
+    }
+
+    article.issue > .box .cost {
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+
+    /*    padding-top: 2rem;*/
+
+        margin-left: 2rem;
+
+        margin-top: 3rem;
+    }
+
+    article.issue > .box .shop {
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+
+        margin-left: 2rem;
+
+        grid-template-columns: min-content min-content;
+
+        height: 1em;
+    }
+
+    article.issue > .box .previews {
+        grid-column: 2 / 3;
+        grid-row: 5 / 6;
+
+        grid-template-columns: min-content min-content;
+
+        height: 1em;
+    }
+    
+    section.previews {
+        border-left: solid 1px gray;
+
+        padding-top: 3rem;
+
+        padding-bottom: 4rem;
+
+        overflow: hidden;
+    }
+
+    section.previews > h1 {
+        color: white;
+        text-shadow:
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+         1px 1px 0 #000;
+
+        font-family: "Messap";
+        font-size: 13.1vw;
+
+        margin-top: 0;
+        margin-left: -0.5rem;
+        margin-bottom: 2rem;
+        
+/*        z-index: -2000;*/
+    }
+
+    section.previews > article {
+        margin-left: 1rem;
+        margin-right: 3rem;
+    }
+
+    section.previews > article > h1 {
+        float: left;
+
+        font-family: "Space Mono";
+        font-weight: 300;
+        font-style: italic;
+
+        background-color: white;
+
+        margin: 0;
+    /*    margin-left: -1rem;*/
+
+        font-size: 1.5rem;
+
+        transform: translate(0, -0.5rem)
+    }
+
+    section.previews > article > h2 {
+        font-family: "Space Mono";
+        font-weight: 300;
+        font-style: italic;
+
+        background-color: white;
+
+        margin: 0;
+        margin-left: 2.25rem;
+        margin-bottom: 2rem;
+
+        font-size: 1.25rem;
+    }
+
+    section.previews > article > p {
+        margin-left: 3rem;
+
+        line-height: 1.5;
+
+        margin-bottom: 6rem;
+    }
+}
