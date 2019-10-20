@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i|Inconsolata|Space+Mono:400,400i&display=swap');
+
+body {
+    background-image: url(img/bg3.png);
+    background-size: 1100px;
+    background-repeat: repeat;
+    background-position: bottom 0px left 50px;
+/*                background-position: center;*/
+    background-attachment: fixed;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+a, a:visited, a:active {
+    color: #1439de;
+}
+
+main {
+    max-width: 60%;
+    margin: auto;
+
+
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+
+/*
+    background-color: white;
+    border-style: solid;
+    padding: 0 4rem;
+*/
+}
+
+* {
+    font-weight: 100;
+
+    max-width: 100%;
+}
+
+.pic {
+    max-width: 100%; 
+
+    margin-bottom: 4rem;
+
+    max-height: 90vh;
+
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.border {
+    border: 1px solid black;
+
+    max-height: 80vh;
+}
+
+.paper {
+    max-height: 70vh;
+}
+
+h2, p {
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+iframe {
+    margin: 1rem;
+}
+
+pre {
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+}
+
+h1, h2, pre, p, a {
+/*                background-color: white;*/
+/*                display: inline-block;*/
+
+    font-family: 'EB Garamond', serif;
+
+/*                color: #e8b10c;*/
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.125rem;
+
+/*                font-family: 'Space Mono', monospace;*/
+/*                font-style: italic;*/
+
+/*                font-family: 'Inconsolata', monospace;*/
+
+    text-align: center;
+    display: inline-block;
+
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+
+    margin-top: 2rem;
+
+
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+pre {
+    font-family: 'Space Mono', monospace;
+    font-style: italic;
+
+    font-size: 0.85rem;
+}
+
+nav {
+    position: fixed;
+
+    margin-left: 1rem;
+
+    margin-top: -3.5rem;
+    
+    max-width: 4.5em;
+    
+    font-size: 1.1rem;
+}
+
+nav a.nav {
+    color: black;
+    text-decoration: none;
+}
+
+nav a.nav.active {
+    text-decoration: underline;
+}
+
+nav a.nav:hover {
+    text-decoration: underline;
+}
+
+nav * {
+    display: block;
+    
+    word-wrap: break-word;
+}
+
+nav .box {
+    width: 30px;
+
+    margin-top: 1rem;
+}
