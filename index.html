@@ -6,20 +6,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script type="application/javascript">
         </script>
-    </head>
-    <body>
         <style>
+           @import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i|Inconsolata|Space+Mono:400,400i&display=swap');
+
+            body {
+                background-image: url(img/bg3.png);
+                background-size: 1100px;
+                background-repeat: repeat;
+                background-position: bottom left;
+/*                background-position: center;*/
+                background-attachment: fixed;
+                
+                
+            }
             
-            body, main {
-                overflow-x: hidden
+            main {
+                overflow-x: hidden;
             }
             
             main {
                 max-width: 60%;
                 margin: auto;
                 
+                
                 margin-top: 4rem;
                 margin-bottom: 8rem;
+                
+/*
+                background-color: white;
+                border-style: solid;
+                padding: 0 4rem;
+*/
             }
             
             * {
@@ -33,7 +50,7 @@
                 
                 margin-bottom: 4rem;
                 
-                max-height: 80vh;
+                max-height: 90vh;
                 
                 margin-left: 50%;
                 transform: translate(-50%, 0);
@@ -42,11 +59,11 @@
             .border {
                 border: 1px solid black;
                 
-                max-height: 70vh;
+                max-height: 80vh;
             }
             
             .paper {
-                max-height: 50vh;
+                max-height: 70vh;
             }
             
             h2, p {
@@ -55,16 +72,77 @@
             }
             
             iframe {
-                margin: 2rem;
+                margin: 1rem;
             }
             
             pre {
                 margin-top: -2rem;
                 margin-bottom: 4rem;
             }
+            
+            h1, h2, pre, p, a {
+/*                background-color: white;*/
+/*                display: inline-block;*/
+                
+                font-family: 'EB Garamond', serif;
+                
+/*                color: #e8b10c;*/
+            }
+            
+            h1 {
+                font-size: 2rem;
+                letter-spacing: 0.125rem;
+                
+/*                font-family: 'Space Mono', monospace;*/
+/*                font-style: italic;*/
+                
+/*                font-family: 'Inconsolata', monospace;*/
+                
+                text-align: center;
+                display: inline-block;
+                
+                margin-left: 50%;
+                transform: translate(-50%, 0);
+                
+                margin-top: 2rem;
+                
+                
+            }
+            
+            p {
+                font-size: 1.125rem;
+            }
+            
+            pre {
+                font-family: 'Space Mono', monospace;
+                font-style: italic;
+                
+                font-size: 0.85rem;
+            }
+            
+            nav {
+                position: fixed;
+                
+                margin: 0;
+                
+                margin-top: -3.5rem;
+            }
+            
+            nav .box {
+                width: 30px;
+                
+                margin: 1rem;
+            }
+            
         </style>
+    </head>
+    <body>
+        <nav>
+            <img class="box" src="img/box.png">
+        </nav>
         <main>
-            <h1 style="margin-bottom: 2rem;">andrew c. s. / work</h1>
+            
+            <h1 style="margin-bottom: 2rem;">andrew c s . info</h1>
             
             <img style="width: 75%; margin-left: 50%; transform: translate(-50%, 0);" src="img/info.png">
             
@@ -74,6 +152,11 @@
               <source src="img/recurring.wav" type="audio/wav">
             Your browser does not support the audio element.
             </audio>
+            
+            <h2>prints</h2>
+            
+            <img class="pic" src="img/IMG_0600.jpg">
+             <img class="pic" src="img/IMG_0617.jpg">
             
             <h2><em>623 s. wabash ave</em> @ columbia college chicago </h2>
             
@@ -203,6 +286,7 @@ inkjet and pen on printer paper on plywood
             
             <h2>work on paper</h2>
             
+<!--
             <img class="pic paper" src="img/IMG_0465.jpg">
             <img class="pic paper" src="img/IMG_0508.jpg">
             <img class="pic paper" src="img/IMG_0410.jpg">
@@ -225,14 +309,29 @@ inkjet and pen on printer paper on plywood
             <img class="pic paper" src="img/IMG_0540.jpg">
             <img class="pic paper" src="img/IMG_0562.jpg">
             <img class="pic paper" src="img/IMG_0572.jpg">
+-->
+            
+            <img class="pic paper" src="img/img016.jpg">
+            
+            <img class="pic paper" src="img/img014.jpg">
+            <img class="pic paper" src="img/img008.jpg">
+            <img class="pic paper" src="img/img007.jpg">
+<!--
+            <img class="pic paper" src="img/img010.jpg">
+            <img class="pic paper" src="img/img009.jpg">
+-->
+            <img class="pic paper" src="img/img011.jpg">
+            <img class="pic paper" src="img/img017.jpg">
+            
+            <img class="pic paper" src="img/img012.jpg">
+            <img class="pic paper" src="img/img015.jpg">
             
             <h2>posters for <a href="https://www.instagram.com/an.open.space/" target="_blank">open space</a></h2>
             
-            <img class="pic border" src="img/67156301_744746272629925_6953170737088615331_n.jpg">
-            <img class="pic border" src="img/59688370_117014606183930_1509692665444401834_n.jpg">
             <img class="pic border" src="img/56816148_2298098043779744_9042896986181436447_n.jpg">
             <img class="pic border" src="img/51683089_2092007367551184_7613847247854836766_n.jpg">
             <img class="pic border" src="img/45866688_2075189636124895_3167164682068152188_n.jpg">
+            <img class="pic border" src="img/59688370_117014606183930_1509692665444401834_n.jpg">
         </main>
     </body>
 <html/>
