@@ -4,7 +4,7 @@ body {
     background-image: url(img/bg3.png);
     background-size: 1100px;
     background-repeat: repeat;
-    background-position: bottom 0px left 50px;
+    background-position: bottom 0px left 55px;
 /*                background-position: center;*/
     background-attachment: fixed;
 }
@@ -13,13 +13,27 @@ main {
     overflow-x: hidden;
 }
 
+
 a, a:visited, a:active {
     color: #1439de;
+    
+    transition: all 0.1s;
+    
+    text-decoration: underline;
+}
+
+a:hover {
+    
+/*    text-decoration: none;*/
+    color: #91a5d8;
 }
 
 main {
-    max-width: 60%;
+    max-width: 110vh;
     margin: auto;
+    
+    padding-right: 4rem;
+    padding-left: 16rem;
 
 
     margin-top: 4rem;
@@ -45,8 +59,10 @@ main {
 
     max-height: 90vh;
 
+/*
     margin-left: 50%;
     transform: translate(-50%, 0);
+*/
 }
 
 .border {
@@ -55,12 +71,23 @@ main {
     max-height: 80vh;
 }
 
+/*
 .paper {
     max-height: 70vh;
 }
+*/
+
+.small {
+    max-height: 50vh;
+    margin-right: 5%;
+}
+
+h2 {
+    font-size: 2rem;
+}
 
 h2, p {
-    margin-top: 5rem;
+    margin-top: rem;
     margin-bottom: 4rem;
 }
 
@@ -73,7 +100,7 @@ pre {
     margin-bottom: 4rem;
 }
 
-h1, h2, pre, p, a {
+* {
 /*                background-color: white;*/
 /*                display: inline-block;*/
 
@@ -82,31 +109,16 @@ h1, h2, pre, p, a {
 /*                color: #e8b10c;*/
 }
 
-h1 {
-    font-size: 2rem;
-    letter-spacing: 0.125rem;
-
-/*                font-family: 'Space Mono', monospace;*/
-/*                font-style: italic;*/
-
-/*                font-family: 'Inconsolata', monospace;*/
-
-    text-align: center;
-    display: inline-block;
-
-    margin-left: 50%;
-    transform: translate(-50%, 0);
-
-    margin-top: 2rem;
-
-
+h1:not(.intro) {
+    font-size: 3rem;
+    margin-bottom: 4rem;
 }
 
 p {
     font-size: 1.125rem;
 }
 
-pre {
+pre, p, p a {
     font-family: 'Space Mono', monospace;
     font-style: italic;
 
@@ -116,7 +128,7 @@ pre {
 nav {
     position: fixed;
 
-    margin-left: 1rem;
+    margin-left: 1.25rem;
 
     margin-top: -3.5rem;
     
@@ -130,12 +142,16 @@ nav a.nav {
     text-decoration: none;
 }
 
+nav a.nav:hover {
+    text-decoration: underline;
+}
+
 nav a.nav.active {
     text-decoration: underline;
 }
 
-nav a.nav:hover {
-    text-decoration: underline;
+nav a:not(.nav) {
+    margin-bottom: 0.5rem;
 }
 
 nav * {
@@ -144,8 +160,56 @@ nav * {
     word-wrap: break-word;
 }
 
+nav div {
+    margin-bottom: 1.5rem;
+}
+
 nav .box {
-    width: 30px;
+    width: 28px;
 
     margin-top: 1rem;
+    
+    margin-bottom: 3rem;
+}
+
+h1.intro {
+    max-width: 14em;
+    font-size: 1.35rem;
+    
+    margin-top: 7rem;
+}
+
+img.intro {
+    font-size: 1.35rem;
+    width: 140px;
+    
+    margin-left: 45vw;
+    margin-top: 8vh;
+}
+
+audio.intro {
+    margin-top: 12vh;
+}
+
+img.window {
+    transform: translate(0, 7%) scale(1.075);
+    margin-bottom: 1.5rem;
+}
+
+/* wide ---------------------------------------------------------------------------*/
+@media all and (min-width: 100vh) { 
+}
+
+/*tall-------------------------------------------------------------------------------*/
+@media all and (max-width: 100vh) { 
+    
+    body {
+    background-position: bottom 0px left -200px;
+}
+    
+    main {
+        padding-left: 7.5rem;
+        
+        padding-right: 1rem;
+    }
 }
