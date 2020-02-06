@@ -14,7 +14,7 @@ main {
 }
 
 
-a, a:visited, a:active {
+a:not(.conatiner), a:not(.conatiner):visited, a:not(.conatiner):active {
     color: #1439de;
     
     transition: all 0.1s;
@@ -22,10 +22,16 @@ a, a:visited, a:active {
     text-decoration: underline;
 }
 
-a:hover {
+a:not(.conatiner):hover {
     
 /*    text-decoration: none;*/
     color: #91a5d8;
+    cursor: pointer;
+}
+
+a.conatiner {
+    color: black;
+    text-decoration: none;
 }
 
 main {
@@ -137,16 +143,16 @@ nav {
     font-size: 1.1rem;
 }
 
-nav a.nav {
+nav a.nav.nav.nav.nav.nav {
     color: black;
     text-decoration: none;
 }
 
-nav a.nav:hover {
+nav a.nav.nav.nav.nav.nav.nav:hover {
     text-decoration: underline;
 }
 
-nav a.nav.active {
+nav a.nav.nav.nav.nav.nav.nav.active {
     text-decoration: underline;
 }
 
@@ -194,6 +200,30 @@ audio.intro {
 img.window {
     transform: translate(0, 7%) scale(1.075);
     margin-bottom: 1.5rem;
+}
+
+a.more, a.more:visited {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-family: serif;
+}
+
+a.more span {
+    text-decoration: underline;
+    font-family: "EB Garamond", serif;
+    vertical-align: 0.15rem;
+}
+
+main article *, article .pic {
+    margin-bottom: 1rem;
+}
+
+main article {
+    margin-bottom: 8rem;
+}
+
+pre {
+    background-color: white;
 }
 
 /* wide ---------------------------------------------------------------------------*/
