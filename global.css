@@ -9,6 +9,10 @@ body {
     background-attachment: fixed;
 }
 
+a {
+    cursor: pointer;
+}
+
 main {
     overflow-x: hidden;
 }
